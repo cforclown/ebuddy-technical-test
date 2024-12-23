@@ -2,7 +2,7 @@
 import axios from 'axios';
 import { updateCurrentUser } from 'firebase/auth';
 import { auth } from '@/firebase/firebaseConfig';
-import { User } from '@/lib/entities/user';
+import { User } from 'entities';
 import storageService from '@/lib/storage-service';
 import { USER_CONTEXT_STORAGE_KEY } from '@/store/reducers/user-context';
 

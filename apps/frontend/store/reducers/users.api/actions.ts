@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { User } from '@/lib/entities/user';
+import { User } from 'entities';
 import { fetchUserData, updateUserData } from '@/apis/users';
 
 // Async action to fetch user data

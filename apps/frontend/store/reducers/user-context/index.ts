@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { createSlice } from "@reduxjs/toolkit";
-import { User } from "@/lib/entities/user";
+import { User } from "entities";
 
 export const USER_CONTEXT_STORAGE_KEY = "user-context";
 

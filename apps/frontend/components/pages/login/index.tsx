@@ -8,7 +8,7 @@ import { auth } from '@/firebase/firebaseConfig';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import storageService from '@/lib/storage-service';
-import { User } from '@/lib/entities/user';
+import { User } from 'entities';
 import { setUserContext, USER_CONTEXT_STORAGE_KEY } from '@/store/reducers/user-context';
 import { useDispatch } from 'react-redux';
 

@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { fetchUser, updateUser } from "./actions";
-import { User } from "@/lib/entities/user";
+import { User } from "entities";
 
 interface UsersState {
   data: User | null;

@@ -1,7 +1,6 @@
 import { HttpStatusCode, RestApiException } from "cexpress-utils/lib";
-import { doc, getDoc } from 'firebase/firestore';
+import { User } from "entities";
 import { db } from "../config/firebaseConfig";
-import { User } from "../entities/user";
 
 const USERS_COLLECTION = "users";
 

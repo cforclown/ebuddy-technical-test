@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "./dist/index.js",
   "scripts": {
+    "build": "tsc",
     "start": "npx tsx index.ts",
     "deploy": "firebase deploy --only functions:api"
   },
@@ -19,7 +20,8 @@
     "firebase": "^11.1.0",
     "firebase-admin": "^13.0.1",
     "firebase-functions": "^6.2.0",
-    "joi": "^17.13.3"
+    "joi": "^17.13.3",
+    "entities": "*"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",

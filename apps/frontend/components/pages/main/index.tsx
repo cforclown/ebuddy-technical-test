@@ -5,7 +5,7 @@ import { Box, Button, TextField, Typography } from '@mui/material';
 import { fetchUser } from '@/store/reducers/users.api/actions';
 import UpdateButton from '@/components/UpdateBtn';
 import { useAppDispatch, useAppSelector } from '@/lib/states.hooks';
-import { User } from '@/lib/entities/user';
+import { User } from 'entities';
 import { useRouter } from 'next/navigation';
 import { auth } from '@/firebase/firebaseConfig';
 import { signOut } from 'firebase/auth';

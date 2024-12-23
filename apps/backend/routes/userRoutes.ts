@@ -1,9 +1,9 @@
 import { Router } from "express";
 import { RequestHandler, validateBody, validateParams } from "cexpress-utils/lib";
 import joi from 'joi';
+import { User } from "entities";
 import { UsersController } from "../controller/users";
 import { UsersCollection } from "../repository/userCollection";
-import { User } from "../entities/user";
 import { authMiddleware } from "../middleware/authMiddleware";
 
 export const updateUserSchema = joi.object<User>({

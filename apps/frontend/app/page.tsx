@@ -8,7 +8,7 @@ import Main from '@/components/pages/main';
 import { useAppDispatch, useAppSelector } from '@/lib/states.hooks';
 import storageService from '@/lib/storage-service';
 import { setUserContext, USER_CONTEXT_STORAGE_KEY } from '@/store/reducers/user-context';
-import { User } from '@/lib/entities/user';
+import { User } from 'entities';
 import { refreshAccessToken, verifyToken } from '@/apis/auth';
 
 function MainPage() {
