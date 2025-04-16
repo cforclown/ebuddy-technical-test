@@ -7,6 +7,8 @@
 
 ## Getting Started
 
+- create `.env` file `cp env-example .env`
+
 - install dependencies
   - `npm ci`
 
