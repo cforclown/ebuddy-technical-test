@@ -5,12 +5,12 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Debug be",
+      "name": "debug-be",
       "type": "node",
       "request": "launch",
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
-      "program": "${workspaceFolder}/apps/backend/src/index.ts",
+      "program": "${workspaceFolder}/apps/backend/index.ts",
       "restart": true,
       "runtimeExecutable": "nodemon",
       "skipFiles": [

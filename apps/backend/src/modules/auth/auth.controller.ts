@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import admin from "../../config/firebaseConfig";
-import { RestApiException } from "cexpress-utils/lib";
-import { UsersCollection } from "../../repository/userCollection";
+import { UsersCollection } from "../../modules/users";
+import { RestApiErrorCode, RestApiException } from "../../utils";
 
 export class AuthController {
   constructor(private readonly usersCollection: UsersCollection) {
@@ -26,9 +26,9 @@ export class AuthController {
       return user;
     } catch (error: any) {
       if (error?.code === 'auth/id-token-expired') {
-        throw new RestApiException('Token expired', 401);
+        throw new RestApiException('Token expired', RestApiErrorCode.UNAUTHORIZED);
       } else {
-        throw new RestApiException('Invalid token', 400);
+        throw new RestApiException('Invalid token', RestApiErrorCode.UNAUTHORIZED);
       }
     }
   };
